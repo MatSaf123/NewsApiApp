@@ -1,6 +1,4 @@
-package com.matsaf123.newsapiapp.ui.models
-
-import com.matsaf123.newsapiapp.ui.models.Article
+package com.matsaf123.newsapiapp.models
 
 data class NewsResponse(
     val articles: List<Article>,

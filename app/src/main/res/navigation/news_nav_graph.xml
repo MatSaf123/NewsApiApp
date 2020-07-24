@@ -5,7 +5,7 @@
 
     <fragment
         android:id="@+id/breakingNewsFragment"
-        android:name="com.matsaf123.newsapiapp.ui.fragments.BreakingNewsFragment"
+        android:name="com.matsaf123.newsapiapp.fragments.BreakingNewsFragment"
         android:label="BreakingNewsFragment" >
         <action
             android:id="@+id/action_breakingNewsFragment_to_articleFragment"
@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/savedNewsFragment"
-        android:name="com.matsaf123.newsapiapp.ui.fragments.SavedNewsFragment"
+        android:name="com.matsaf123.newsapiapp.fragments.SavedNewsFragment"
         android:label="SavedNewsFragment" >
         <action
             android:id="@+id/action_savedNewsFragment_to_articleFragment"
@@ -32,7 +32,7 @@
 
     <fragment
         android:id="@+id/searchedNewsFragment"
-        android:name="com.matsaf123.newsapiapp.ui.fragments.SearchedNewsFragment"
+        android:name="com.matsaf123.newsapiapp.fragments.SearchedNewsFragment"
         android:label="SearchedNewsFragment" >
         <action
             android:id="@+id/action_searchedNewsFragment_to_articleFragment"
@@ -45,6 +45,6 @@
 
     <fragment
         android:id="@+id/articleFragment"
-        android:name="com.matsaf123.newsapiapp.ui.fragments.ArticleFragment"
+        android:name="com.matsaf123.newsapiapp.fragments.ArticleFragment"
         android:label="ArticleFragment" />
 </navigation>

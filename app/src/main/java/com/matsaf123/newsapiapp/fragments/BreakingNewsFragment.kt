@@ -1,4 +1,4 @@
-package com.matsaf123.newsapiapp.ui.fragments
+package com.matsaf123.newsapiapp.fragments
 
 import androidx.fragment.app.Fragment
 import com.matsaf123.newsapiapp.R

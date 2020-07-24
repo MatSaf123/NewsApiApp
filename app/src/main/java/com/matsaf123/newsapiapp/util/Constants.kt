@@ -1,4 +1,4 @@
-package com.matsaf123.newsapiapp.ui.util
+package com.matsaf123.newsapiapp.util
 
 import com.matsaf123.newsapiapp.R
 

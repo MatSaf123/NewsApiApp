@@ -1,7 +1,7 @@
-package com.matsaf123.newsapiapp.ui.db
+package com.matsaf123.newsapiapp.db
 
 import androidx.room.TypeConverter
-import com.matsaf123.newsapiapp.ui.models.Source
+import com.matsaf123.newsapiapp.models.Source
 
 class Converters {
 

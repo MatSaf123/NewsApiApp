@@ -1,8 +1,8 @@
-package com.matsaf123.newsapiapp.ui.db
+package com.matsaf123.newsapiapp.db
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.matsaf123.newsapiapp.ui.models.Article
+import com.matsaf123.newsapiapp.models.Article
 
 @Dao
 interface ArticleDAO {

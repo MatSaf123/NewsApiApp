@@ -1,7 +1,7 @@
-package com.matsaf123.newsapiapp.ui.api
+package com.matsaf123.newsapiapp.api
 
-import com.matsaf123.newsapiapp.ui.models.NewsResponse
-import com.matsaf123.newsapiapp.ui.util.Constants.Companion.API_KEY
+import com.matsaf123.newsapiapp.models.NewsResponse
+import com.matsaf123.newsapiapp.util.Constants.Companion.API_KEY
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query

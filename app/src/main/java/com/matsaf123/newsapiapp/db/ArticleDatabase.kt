@@ -1,11 +1,11 @@
-package com.matsaf123.newsapiapp.ui.db
+package com.matsaf123.newsapiapp.db
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import com.matsaf123.newsapiapp.ui.models.Article
+import com.matsaf123.newsapiapp.models.Article
 
 @Database(
     entities = [Article::class],
