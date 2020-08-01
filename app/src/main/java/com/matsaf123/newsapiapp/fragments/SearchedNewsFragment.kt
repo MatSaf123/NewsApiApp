@@ -10,6 +10,7 @@ import com.matsaf123.newsapiapp.ui.NewsActivity
 import com.matsaf123.newsapiapp.ui.NewsViewModel
 import com.matsaf123.newsapiapp.util.Resource
 import androidx.lifecycle.Observer
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.matsaf123.newsapiapp.adapters.NewsAdapter
 import com.matsaf123.newsapiapp.util.Constants.Companion.SEARCH_NEWS_TIME_DELAY
@@ -30,6 +31,17 @@ class SearchedNewsFragment : Fragment(R.layout.fragment_search_news) {
         super.onViewCreated(view, savedInstanceState)
         viewModel = (activity as NewsActivity).viewModel
         setupRecyclerView()
+
+        newsAdapter.setOnItemClickListener {
+            val bundle = Bundle().apply {
+                putSerializable("article", it)
+            }
+
+            findNavController().navigate(
+                R.id.action_searchedNewsFragment_to_articleFragment,
+                bundle
+            )
+        }
 
         // delay when searching:
         var  job: Job? = null

@@ -46,5 +46,9 @@
     <fragment
         android:id="@+id/articleFragment"
         android:name="com.matsaf123.newsapiapp.fragments.ArticleFragment"
-        android:label="ArticleFragment" />
+        android:label="ArticleFragment" >
+        <argument
+            android:name="article"
+            app:argType="com.matsaf123.newsapiapp.models.Article" />
+    </fragment>
 </navigation>
