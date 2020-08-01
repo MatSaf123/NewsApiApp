@@ -4,6 +4,7 @@ import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.matsaf123.newsapiapp.models.Article
 import com.matsaf123.newsapiapp.models.NewsResponse
 import com.matsaf123.newsapiapp.repository.NewsRepository
 import com.matsaf123.newsapiapp.util.Resource
@@ -53,5 +54,15 @@ class NewsViewModel(
         }
         return Resource.Error(response.message())
     }
+
+    fun saveArticle(article: Article) = viewModelScope.launch {
+        newsRepository.upsertArticle(article)
+    }
+    
+    fun deleteArticle(article: Article) = viewModelScope.launch {
+        newsRepository.deleteArticle(article)
+    }
+
+    fun getSavedNews() = newsRepository.getSavedNews()
 
 }
