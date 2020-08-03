@@ -40,6 +40,8 @@ class NewsViewModel(
     }
 
     fun searchNews(searchQuery: String) = viewModelScope.launch {
+        searchNewsPage = 1
+        searchNewsResponse = null
         safeSearchNewsCall(searchQuery)
     }
 
