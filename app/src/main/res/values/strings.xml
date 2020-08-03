@@ -1,4 +1,5 @@
 <resources>
-    <string name="app_name">NewsApiApp</string>
+    <string name="app_name">News feed application</string>
     <string name="API_KEY_s">5f223882025a48899f99996fe26b748f</string>
+    <string name="about_app_desc">Android - Kotlin - Model-View-ViewModel application operating on news feed with data fetched from News API.\nMost of the code and functionality is based on AndroidDevs\' YouTube tutorial: \"MVVM News App\"</string>
 </resources>

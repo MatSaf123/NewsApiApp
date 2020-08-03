@@ -14,7 +14,6 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right" />
-
     </fragment>
 
     <fragment
@@ -51,4 +50,10 @@
             android:name="article"
             app:argType="com.matsaf123.newsapiapp.models.Article" />
     </fragment>
+    <fragment
+        android:id="@+id/aboutAppFragment"
+        android:name="com.matsaf123.newsapiapp.fragments.AboutAppFragment"
+        android:label="AboutAppFragment" />
+
+
 </navigation>
